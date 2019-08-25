@@ -9,8 +9,8 @@ abstract class SocialNetworkPoster
 	{
 		$socialNetwork = $this->getSocialNetworkAccount();
 
-		$socialNetwork->login();
-		$socialNetwork->createPost();
-		$socialNetwork->logout();
+		$socialNetwork->logIn();
+		$socialNetwork->createPost($content);
+		$socialNetwork->logOut();
 	}
 }
